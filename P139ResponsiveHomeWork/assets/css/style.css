@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Responsive starts */
+/* ------------------------------------- */
+
+@media only screen and (max-width: 576px) {
+  header .row div:nth-child(2) {
+    display: none;
+  }
+
+  .sign-in a {
+    display: none;
+  }
+
+  .sign-in i {
+    display: block !important;
+    margin-left: 15px;
+  }
+
+  #features .features-text p {
+    width: 100%;
+    text-align: center;
+  }
+
+  #features .feature-card .feature-card_left {
+    margin-top: 20px;
+  }
+
+  #features .feature-card .feature-card_left .feature-card_right--img {
+    display: none;
+  }
+
+  #why-choose-us .why-us_top .why-choose-img {
+    margin-top: 50px;
+  }
+
+  #why-choose-us .why-us_top .why-choose-text h2 {
+    width: 100% !important;
+    font-size: 1rem !important;
+  }
+
+  #why-choose-us .why-us_top .why-choose-text p {
+    width: 100% !important;
+  }
+
+  #why-choose-us .why-us_top .why-choose-text ul {
+    display: inline !important;
+  }
+
+  #why-choose-us .why-us_top .why-choose-text ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  header .row div:nth-child(2) {
+    display: none;
+  }
+  .sign-in i {
+    display: block !important;
+    margin-left: 15px;
+  }
+
+  #features .features-text p {
+    width: 100%;
+    text-align: center;
+  }
+
+  #features .feature-card .feature-card_left {
+    margin-top: 20px;
+  }
+
+  #features .feature-card .feature-card_left .feature-card_right--img {
+    display: none;
+  }
+
+  #why-choose-us .why-us_top .why-choose-img {
+    margin-top: 50px;
+  }
+
+  #why-choose-us .why-us_top .why-choose-text h2 {
+    width: 100% !important;
+    font-size: 1.5rem !important;
+  }
+
+  #why-choose-us .why-us_top .why-choose-text p {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #features .third-feature {
+    margin-left: 160px;
+  }
+
+  #features .feature-card .feature-card_left {
+    margin-top: 20px;
+    height: 200px;
+  }
+
+  #features .feature-card .feature-card_left .feature-card_right--img {
+    display: none;
+  }
+
+  #why-choose-us .why-us_top .why-choose-img {
+    margin-top: 50px;
+  }
+
+  #why-choose-us .why-us_top .why-choose-text h2 {
+    width: 100% !important;
+    font-size: 2rem !important;
+  }
+
+  #why-choose-us .why-us_top .why-choose-text p {
+    width: 100% !important;
+    font-size: 1rem !important;
+  }
+
+  #why-choose-us .why-us_top .row-reverse {
+    flex-direction: row;
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  header .row div:nth-child(2) {
+    display: none;
+  }
+
+  header .sign-in i {
+    display: block !important;
+    margin-left: 15px;
+  }
+
+  #greet .greet-left .greet-left_text h1 {
+    font-size: 2.5rem;
+  }
+
+  #features .features-text p {
+    width: 100%;
+  }
+
+  #why-choose-us .why-us_top .why-choose-text h2 {
+    width: 100% !important;
+    font-size: 2rem !important;
+  }
+
+  #why-choose-us .why-us_top .why-choose-text p {
+    width: 100% !important;
+    font-size: 1rem !important;
+  }
+}
+
+/* ------------------------------------- */
+/* Responsive starts */
+
+/* Header strats */
+/* ------------------------------------- */
+
+header {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+header .nav-menu {
+  height: 100%;
+}
+
+header .nav-menu ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .nav-menu ul li {
+  list-style: none;
+}
+
+header .nav-menu ul li a {
+  font-size: 15px;
+  color: #575757;
+  transition: 0.6s;
+}
+
+header .nav-menu ul li a:hover {
+  color: #175cff;
+}
+
+header .sign-in {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+header .sign-in :first-child {
+  font-size: 15px;
+  color: #575757;
+  transition: 0.6s;
+}
+
+header .sign-in :first-child:hover {
+  color: #175cff;
+}
+
+header .sign-in a:nth-child(2) {
+  color: #fff;
+  font-size: 15px;
+  padding: 10.4px 28px;
+  background-color: #175cff;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: 0.6s;
+}
+
+header .sign-in a:nth-child(2):hover {
+  background-color: #0044e3;
+}
+
+header .sign-in i {
+  display: none;
+  font-size: 15px;
+}
+
+/* ------------------------------------- */
+
+/* Header ends */
+
+/* Greet starts */
+/* ------------------------------------- */
+
+#greet {
+  padding: 5rem 0;
+  background: linear-gradient(126deg, #071c4d, #002d97) !important;
+}
+
+#greet .greet-left .greet-left_text h1 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+#greet .greet-left .greet-left_text p {
+  color: #d9d9d9;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  margin-top: 20px;
+}
+
+#greet .greet-left .greet-left_text a:nth-child(3) {
+  color: #fff;
+  font-size: 15px;
+  padding: 10.4px 28px;
+  background-color: #175cff;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: 0.6s;
+}
+
+#greet .greet-left .greet-left_text a:nth-child(3):hover {
+  background-color: #002d97;
+}
+
+#greet .greet-left .greet-left_text :last-child {
+  color: #b3b3b9;
+  font-size: 15px;
+  margin-left: 4px;
+  transition: 0.6s;
+}
+
+#greet .greet-left .greet-left_text :last-child:hover {
+  color: white;
+}
+
+#greet .greet-left .greet-left_text :last-child i {
+  font-size: 45px;
+  transform: translateY(7px);
+}
+
+#greet .greet-left_clients {
+  margin-top: 3rem;
+}
+
+#greet .greet-left_clients h6 {
+  color: #d9d9d9;
+  margin-bottom: 2rem;
+}
+
+#greet .greet-left_clients .client {
+  display: flex;
+  justify-content: start;
+  width: 60%;
+  margin-left: -15px;
+}
+
+#greet .greet-left_clients .client img {
+  max-width: 100%;
+}
+
+#greet .greet-right div {
+  width: 100%;
+}
+
+#greet .greet-right div img {
+  width: 100%;
+}
+
+/* ------------------------------------- */
+/* Greet ends */
+
+/* Feature starts */
+/* ------------------------------------- */
+
+#features {
+  background-color: #f8f9fa !important;
+  padding: 5rem 0;
+}
+
+#features .features-text {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#features .features-text h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+#features .features-text p {
+  color: #575757;
+  width: 50%;
+  margin: 15px auto 0;
+  text-align: center;
+}
+
+#features .feature {
+  padding: 50px;
+  text-align: center;
+}
+
+#features .feature .feature-icon {
+  background-color: #175cff;
+  display: inline-block;
+  padding: 16px;
+  border-radius: 1rem;
+  margin-bottom: 40px;
+}
+
+#features .feature .feature-icon i {
+  font-size: 2rem;
+  color: white;
+}
+
+#features .feature h3 {
+  font-weight: 600;
+}
+
+#features .feature p {
+  text-align: center;
+}
+
+#features .feature-card .feature-card_left {
+  display: flex;
+  align-items: center;
+  background-color: #f2576733;
+  border-radius: 1rem;
+  padding: 10px 0 20px 50px;
+}
+
+#features .feature-card .feature-card_left .feature-card_left--text a {
+  padding: 10px;
+  border: 2px solid #002d97;
+  border-radius: 5px;
+  color: #002d97;
+  transition: 0.6s;
+}
+
+#features .feature-card .feature-card_left .feature-card_left--text a:hover {
+  color: white;
+  background-color: #002d97;
+}
+
+#features .feature-card .feature-card_left .feature-card_left--text p {
+  margin-bottom: 40px;
+  color: #575757;
+}
+
+#features .feature-card .feature-card_left .feature-card_right--img {
+  width: 80%;
+}
+
+#features .feature-card .feature-card_left .feature-card_right--img img {
+  width: 100%;
+  /* margin-bottom: -10px; */
+}
+
+/* ------------------------------------- */
+/* Features ends */
+
+/* Why-us starts */
+/* ------------------------------------- */
+
+#why-choose-us {
+  padding: 5rem 0;
+}
+
+#why-choose-us .why-us .row-reverse {
+  flex-direction: row-reverse;
+  margin-top: 8rem;
+  justify-content: space-between !important;
+}
+
+#why-choose-us .why-us .row-reverse .why-choose-text h2 {
+  width: 100%;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#why-choose-us .why-us .row-reverse .why-choose-text p {
+  width: 100%;
+}
+
+#why-choose-us .why-us .why-choose-text .why-us-icon {
+  background-color: #0d6efd;
+  padding: 16px;
+  color: white;
+  display: inline;
+  border-radius: 10px;
+}
+
+#why-choose-us .why-us .why-choose-text .why-us-icon i {
+  font-size: 20px;
+}
+
+#why-choose-us .why-us .why-choose-text h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  width: 80%;
+  padding-top: 40px;
+  margin-bottom: 2rem;
+}
+
+#why-choose-us .why-us .why-choose-text p {
+  color: #575757;
+  width: 80%;
+}
+
+#why-choose-us .why-us .why-choose-text ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  padding-left: 0;
+}
+#why-choose-us .why-us .why-choose-text ul li {
+  list-style: none;
+  width: 45%;
+}
+
+#why-choose-us .why-us .why-choose-text a {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+#why-choose-us .why-us .why-choose-text a i {
+  transform: translate(10px);
+  transform: translateY(2px);
+}
+
+#why-choose-us .why-us .why-choose-img {
+  width: 100%;
+}
+
+#why-choose-us .why-us .why-choose-img div {
+  width: 100%;
+}
+
+#why-choose-us .why-us .why-choose-img img {
+  width: 100%;
+}
